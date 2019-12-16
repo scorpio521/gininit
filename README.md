@@ -14,8 +14,8 @@ go mod使用请查阅：
 
 https://blog.csdn.net/e421083458/article/details/89762113
 ```
-git clone git@github.com:e421083458/gin_scaffold.git
-cd gin_scaffold
+git clone git@github.com:scorpio521/gininit
+cd gininit
 go mod tidy
 ```
 - 运行脚本
