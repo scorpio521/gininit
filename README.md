@@ -1,4 +1,4 @@
-# gin_scaffold
+# gininit
 Gin best practices, gin development scaffolding, too late to explain, get on the bus.
 
 使用gin构建了企业级脚手架，代码简洁易读，可快速进行高效web开发。
