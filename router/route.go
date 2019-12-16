@@ -5,6 +5,7 @@ import (
 	"gininit/middleware"
 	"github.com/gin-gonic/contrib/sessions"
 	"github.com/gin-gonic/gin"
+
 )
 
 func InitRouter(middlewares ...gin.HandlerFunc) *gin.Engine {
@@ -17,6 +18,7 @@ func InitRouter(middlewares ...gin.HandlerFunc) *gin.Engine {
 	router.Use(middlewares...)
 
 	//demo
+
 	v1 := router.Group("/demo")
 	v1.Use(middleware.RecoveryMiddleware(), middleware.RequestLog(), middleware.IPAuthMiddleware(), middleware.TranslationMiddleware())
 	{
@@ -39,7 +41,7 @@ func InitRouter(middlewares ...gin.HandlerFunc) *gin.Engine {
 
 	apiAuthGroup := router.Group("/api")
 	apiAuthGroup.Use(
-		sessions.Sessions("mysession", store),
+		//sessions.Sessions("mysession", store),
 		middleware.RecoveryMiddleware(),
 		middleware.RequestLog(),
 		//middleware.SessionAuthMiddleware(),

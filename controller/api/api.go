@@ -2,6 +2,7 @@ package api
 
 import (
 	"errors"
+	"fmt"
 	"gininit/models"
 	"gininit/dto"
 	"gininit/middleware"
@@ -73,6 +74,7 @@ func (demo *Api) AddUser(c *gin.Context) {
 		middleware.ResponseError(c,2006,err)
 		return
 	}
+	fmt.Print(222222)
 	user:=&models.User{}
 	user.Name = addInput.Name
 	user.Sex = addInput.Sex
@@ -81,6 +83,8 @@ func (demo *Api) AddUser(c *gin.Context) {
 	user.Addr = addInput.Addr
 	user.CreateAt = time.Now()
 	user.UpdateAt = time.Now()
+	fmt.Print(user)
+
 	if err:=user.Save();err!=nil{
 		middleware.ResponseError(c,2007,err)
 		return
