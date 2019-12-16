@@ -28,6 +28,7 @@ func FromatData(code interface{}, data interface{}, msg interface{}) (res map[st
 
 	return
 }
+
 func GenerateRangeNum(min, max int) int {
 	rand.Seed(time.Now().Unix())
 	randNum := rand.Intn(max - min)
