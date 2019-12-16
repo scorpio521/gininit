@@ -1,7 +1,7 @@
 package router
 
 import (
-	"gininit/controller"
+	"gininit/controller/api"
 	"gininit/middleware"
 	"github.com/gin-gonic/contrib/sessions"
 	"github.com/gin-gonic/gin"
@@ -20,13 +20,14 @@ func InitRouter(middlewares ...gin.HandlerFunc) *gin.Engine {
 	v1 := router.Group("/demo")
 	v1.Use(middleware.RecoveryMiddleware(), middleware.RequestLog(), middleware.IPAuthMiddleware(), middleware.TranslationMiddleware())
 	{
-		controller.DemoRegister(v1)
+
+		api.DemoRegister(v1)
 	}
 
 	//api
 	store := sessions.NewCookieStore([]byte("secret"))
 	apiNormalGroup := router.Group("/api")
-	apiController:=&controller.Api{}
+	apiController:=&api.Api{}
 	apiNormalGroup.Use(
 		sessions.Sessions("mysession", store),
 		middleware.RecoveryMiddleware(),
