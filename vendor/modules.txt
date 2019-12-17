@@ -1,5 +1,3 @@
-# github.com/BurntSushi/toml v0.3.1
-github.com/BurntSushi/toml
 # github.com/aliyun/alibaba-cloud-sdk-go v1.60.292
 github.com/aliyun/alibaba-cloud-sdk-go/sdk
 github.com/aliyun/alibaba-cloud-sdk-go/sdk/requests
@@ -11,9 +9,6 @@ github.com/aliyun/alibaba-cloud-sdk-go/sdk/errors
 github.com/aliyun/alibaba-cloud-sdk-go/sdk/responses
 github.com/aliyun/alibaba-cloud-sdk-go/sdk/utils
 github.com/aliyun/alibaba-cloud-sdk-go/sdk/auth/signers
-# github.com/ant0ine/go-json-rest v3.3.2+incompatible
-github.com/ant0ine/go-json-rest/rest
-github.com/ant0ine/go-json-rest/rest/trie
 # github.com/astaxie/beego v1.12.0
 github.com/astaxie/beego
 github.com/astaxie/beego/orm
@@ -25,8 +20,6 @@ github.com/astaxie/beego/logs
 github.com/astaxie/beego/session
 github.com/astaxie/beego/toolbox
 github.com/astaxie/beego/utils
-# github.com/axgle/mahonia v0.0.0-20180208002826-3358181d7394
-github.com/axgle/mahonia
 # github.com/boj/redistore v0.0.0-20180917114910-cd5dcc76aeff
 github.com/boj/redistore
 # github.com/e421083458/golang_common v1.0.3
@@ -64,8 +57,6 @@ github.com/golang/protobuf/proto
 # github.com/gomodule/redigo v2.0.0+incompatible
 github.com/gomodule/redigo/redis
 github.com/gomodule/redigo/internal
-# github.com/gookit/color v1.1.7
-github.com/gookit/color
 # github.com/gorilla/context v1.1.1
 github.com/gorilla/context
 # github.com/gorilla/securecookie v1.1.1
@@ -83,11 +74,9 @@ github.com/hashicorp/hcl/hcl/scanner
 github.com/hashicorp/hcl/hcl/strconv
 github.com/hashicorp/hcl/json/scanner
 github.com/hashicorp/hcl/json/token
-# github.com/inconshreveable/mousetrap v1.0.0
-github.com/inconshreveable/mousetrap
-# github.com/jinzhu/gorm v1.9.10
-github.com/jinzhu/gorm
-# github.com/jinzhu/inflection v1.0.0
+# github.com/iGoogle-ink/gopay v1.4.8
+github.com/iGoogle-ink/gopay
+# github.com/jinzhu/inflection v0.0.0-20180308033659-04140366298a
 github.com/jinzhu/inflection
 # github.com/jmespath/go-jmespath v0.0.0-20180206201540-c2b33e8439af
 github.com/jmespath/go-jmespath
@@ -116,8 +105,6 @@ github.com/spf13/afero
 github.com/spf13/afero/mem
 # github.com/spf13/cast v1.3.0
 github.com/spf13/cast
-# github.com/spf13/cobra v0.0.5
-github.com/spf13/cobra
 # github.com/spf13/jwalterweatherman v1.0.0
 github.com/spf13/jwalterweatherman
 # github.com/spf13/pflag v1.0.3
@@ -126,19 +113,6 @@ github.com/spf13/pflag
 github.com/spf13/viper
 # github.com/ugorji/go/codec v1.1.7
 github.com/ugorji/go/codec
-# github.com/xxjwxc/gormt v1.1.2
-github.com/xxjwxc/gormt
-github.com/xxjwxc/gormt/data/cmd
-github.com/xxjwxc/gormt/data/config
-github.com/xxjwxc/gormt/data/view/gtools
-github.com/xxjwxc/gormt/data/view/gtools/generate
-# github.com/xxjwxc/public v0.0.0-20190915135914-aefa9155c004
-github.com/xxjwxc/public/tools
-github.com/xxjwxc/public/dev
-github.com/xxjwxc/public/mybigcamel
-github.com/xxjwxc/public/mysqldb
-github.com/xxjwxc/public/errors
-github.com/xxjwxc/public/mylog
 # golang.org/x/crypto v0.0.0-20191206172530-e9b2fee46413
 golang.org/x/crypto/acme/autocert
 golang.org/x/crypto/acme

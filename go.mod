@@ -13,6 +13,7 @@ require (
 	github.com/go-playground/universal-translator v0.17.0
 	github.com/gomodule/redigo v2.0.0+incompatible
 	github.com/gorilla/sessions v1.1.3 // indirect
+	github.com/iGoogle-ink/gopay v1.4.8
 	github.com/json-iterator/go v1.1.8 // indirect
 	github.com/leodido/go-urn v1.2.0 // indirect
 	github.com/mattn/go-isatty v0.0.11 // indirect
