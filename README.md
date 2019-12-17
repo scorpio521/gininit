@@ -95,7 +95,8 @@ curl 'http://127.0.0.1:8880/demo/bind?name=name&locale=en'
     "trace_id": "c0a8fe445d05bb4cd3b00f9f3a768bb0"
 }
 ```
-
+用的bee工具来生成orm
+./bee  generate appcode -driver=mysql -conn="root:root@tcp(127.0.0.1:3306)/imonkey_shop" -level=1
 ### 文件分层
 ```
 ├── README.md
