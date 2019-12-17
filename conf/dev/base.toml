@@ -18,9 +18,9 @@
     log_level = "trace"         #日志打印最低级别
     [log.file_writer]           #文件写入配置
         on = true
-        log_path = "./gin_scaffold.inf.log"
-        rotate_log_path = "./gin_scaffold.inf.log"
-        wf_log_path = "./gin_scaffold.wf.log"
+        log_path = "./gininit.inf.log"
+        rotate_log_path = "./gin_init.inf.log"
+        wf_log_path = "./gininit.wf.log"
         rotate_wf_log_path = "./gin_scaffold.wf.log"
     [log.console_writer]        #工作台输出
         on = false
