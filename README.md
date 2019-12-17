@@ -106,7 +106,7 @@ curl 'http://127.0.0.1:8880/demo/bind?name=name&locale=en'
 │       └── redis_map.toml
 ├── controller 控制器
 │   └── demo.go
-├── dao DB数据访问层
+├── models DB数据访问层
 │   └── demo.go
 ├── dto  Bind结构体层
 │   └── demo.go
@@ -120,7 +120,7 @@ curl 'http://127.0.0.1:8880/demo/bind?name=name&locale=en'
 │   ├── response.go
 │   ├── token_auth.go
 │   └── translation.go
-├── public  公共文件
+├── tool  公共文件
 │   ├── log.go
 │   ├── mysql.go
 │   └── validate.go

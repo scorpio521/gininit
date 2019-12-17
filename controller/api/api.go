@@ -3,7 +3,7 @@ package api
 import (
 	"errors"
 	"fmt"
-	"gininit/models"
+	"gininit/models/shop"
 	"gininit/dto"
 	"gininit/middleware"
 	"github.com/gin-gonic/contrib/sessions"
@@ -49,7 +49,7 @@ func (demo *Api) ListPage(c *gin.Context) {
 		middleware.ResponseError(c,2003,err)
 		return
 	}
-	user:=&models.User{}
+	user:=&shop.User{}
 	pageInt,err:=strconv.ParseInt(listInput.Page,10,64)
 	if err!=nil{
 		middleware.ResponseError(c,2004,err)
@@ -75,7 +75,7 @@ func (demo *Api) AddUser(c *gin.Context) {
 		return
 	}
 	fmt.Print(222222)
-	user:=&models.User{}
+	user:=&shop.User{}
 	user.Name = addInput.Name
 	user.Sex = addInput.Sex
 	user.Age = addInput.Age
@@ -100,7 +100,7 @@ func (demo *Api) EditUser(c *gin.Context) {
 		return
 	}
 
-	user:=&models.User{}
+	user:=&shop.User{}
 	if userDb,err:=user.Find(int64(editInput.Id));err!=nil{
 		middleware.ResponseError(c,2006,err)
 		return
@@ -129,7 +129,7 @@ func (demo *Api) RemoveUser(c *gin.Context) {
 		return
 	}
 
-	user:=&models.User{}
+	user:=&shop.User{}
 	if err:=user.Del(strings.Split(removeInput.IDS,","));err!=nil{
 		middleware.ResponseError(c,2007,err)
 		return

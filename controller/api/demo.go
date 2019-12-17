@@ -2,7 +2,7 @@ package api
 
 import (
 	"encoding/json"
-	"gininit/models"
+	"gininit/models/shop"
 	"gininit/dto"
 	"gininit/middleware"
 	"gininit/tool"
@@ -28,7 +28,7 @@ func (demo *Demo) Index(c *gin.Context) {
 }
 
 func (demo *Demo) Dao(c *gin.Context) {
-	if area,err:=(&models.Area{}).Find(c.DefaultQuery("id","1"));err!=nil{
+	if area,err:=(&shop.Area{}).Find(c.DefaultQuery("id","1"));err!=nil{
 		middleware.ResponseError(c,501,err)
 	}else{
 		js,_:=json.Marshal(area)

@@ -1,4 +1,4 @@
-package models
+package shop
 
 import (
 	"gininit/tool"
